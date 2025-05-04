@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lily Script One' rel='stylesheet'>
+</head>
+<body>
+    <body class="scl">
+   
+    
+    <header class="Logo">A
+    </header>
+    
+
+<H1>Ayrionna</H1>
+<h2>Christian</h2>
+
+<footer><div class="profession">
+    Graphic Design
+</div>
+</footer>
+
+<div class="homebutterly">
+
+    <img class="homebutterly" src="imgs/homebuttery.png.png" alt="butterfly">
+    <img class="homebutterly2" src="imgs/homebuttery.png.png" alt="butterfly">
+</div>
+
+
+    <button class="menu-button" id="openMenu"><img src="imgs/butterfly3.png.png" alt=""></button>
+
+
+    <div class="overlay-menu" id="overlayMenu">
+        <button class="close-button" id="closeMenu">&times;</button>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="artworks-display.html">Artworks</a>
+          <a href="About.html">About</a>
+          <a href="contact.html">My Journey</a>
+        </nav>
+      </div>
+
+
+
+
+
+
+
+
+      
+      <script>
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const overlayMenu = document.getElementById('overlayMenu');
+      
+        // 🟢 Show overlay menu
+        openMenu.addEventListener('click', () => {
+          overlayMenu.classList.add('active');
+        });
+      
+        // 🔴 Hide overlay menu
+        closeMenu.addEventListener('click', () => {
+          overlayMenu.classList.remove('active');
+        });
+      
+        // ⌨️ Close with ESC
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            overlayMenu.classList.remove('active');
+          }
+        });
+      </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

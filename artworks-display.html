@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Display</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lily Script One" rel="stylesheet">
+</head>
+<body class="scl">
+   
+  <button class="homebutton"><a href="index.html">
+    <img class="homebutton" id="click" src="imgs/Butterfly.png" alt=""></a></button>
+    <header class="artdisplay"><h4>Artworks</h4>
+    </header>
+
+
+<section class="displaypage">
+
+<div><a href="artworks-dogs.html" class="hover-preview" data-img="imgs/Two_Souls_One_Heart.jpg">Two Souls, One Heart</a></div>
+<div><a href="artworks-Inifinte Journeys.html" class="hover-preview" data-img="imgs/Infinite.PNG">Infinite Journeys</a></div>
+<div><a href="artworks-chocolate.html" class="hover-preview" data-img="imgs/Chocolate_Mug.png">Chocolate Globes</a></div>
+<div><a href="artworks-FYV.html" class="hover-preview" data-img="imgs/FYV.jpg">Fill Your Void</a></div>
+<div><a href="artworks-Comfort.html" class="hover-preview" data-img="imgs/comfort_minds.PNG">Comfort Minds</a></div>
+
+
+<img src="imgs/Dog.PNG" alt="Dog" id="previewImg" class="preview-img" />
+
+    
+</section>
+
+
+
+
+
+
+<script>
+  const previewImg = document.getElementById('previewImg');
+  const hoverLinks = document.querySelectorAll('.hover-preview');
+
+  // 🔄 Preload all images
+  hoverLinks.forEach(link => {
+    const img = new Image();
+    img.src = link.dataset.img;
+  });
+
+  if (window.matchMedia('(hover: hover)').matches) {
+    hoverLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        const imgSrc = link.dataset.img;
+        previewImg.src = imgSrc;
+        previewImg.classList.add('visible');
+      });
+
+      link.addEventListener('mousemove', (e) => {
+        previewImg.style.top = `${e.clientY}px`;
+        previewImg.style.left = `${e.clientX}px`;
+      });
+
+      link.addEventListener('mouseleave', () => {
+        previewImg.classList.remove('visible');
+      });
+    });
+  }
+
+  
+</script>
+
+
+</body>
+</html>

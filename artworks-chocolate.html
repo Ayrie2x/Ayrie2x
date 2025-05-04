@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lily Script One' rel='stylesheet'>
+</head>
+<body>
+  <button class="displaybutton"><a href="artworks-display.html">
+    <img class="displaybutton" id="click" src="imgs/butterfly3.png.png" alt=""></button></a>
+
+    <main>
+<section class="gallery-section">
+
+   <div><H1>Chocolate Globes</H1></div>
+
+   <div class="slider-container">
+    <button class="slider-button left" id="prevBtn">&#8592;</button>
+    <div class="slider-images" id="sliderTrack">
+      <!-- 🖼️ You can replace these with your own images -->
+      <img src="imgs/Chocolate_Mug.png" alt="Slide 1" loading="lazy">
+      <img src="imgs/CoffeCup.jpg" alt="Slide 2" loading="lazy">
+     
+    </div>
+    <button class="slider-button right" id="nextBtn">&#8594;</button>
+  </div>
+   
+
+
+    <p>This charming logo for Chocolate Globes beautifully captures the cozy 
+        and indulgent essence of the brand. At the center is a stylized cup of hot chocolate,
+         rendered in warm shades of brown and tan, with the business name elegantly written across the cup
+          in a graceful, serif font. Rising from the cup is steam that forms into a heart shape, 
+          symbolizing warmth, love, and comfort. The cup sits on a simple saucer, 
+          and to its side is a decadent chocolate truffle decorated with drizzles and dotted toppings, 
+          visually representing the “globes” in the name.</p>
+   </div>
+
+
+  
+    
+
+
+
+
+</section>
+
+
+
+
+    </main>
+
+    <script>
+        const slider = document.getElementById('sliderTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slides = slider.querySelectorAll('img');
+        let currentIndex = 0;
+      
+        function updateSlider() {
+          const slideWidth = slides[0].clientWidth;
+          slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+      
+        // 👉 Move to previous image
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateSlider();
+        });
+      
+        // 👉 Move to next image
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlider();
+        });
+      
+        // 🧠 Make sure it resizes correctly
+        window.addEventListener('resize', updateSlider);
+      </script>
+</body>
+</html>

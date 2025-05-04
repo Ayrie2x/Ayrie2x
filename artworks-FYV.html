@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lily Script One' rel='stylesheet'>
+</head>
+<body>
+    
+  <button class="displaybutton"><a href="artworks-display.html">
+    <img class="displaybutton" id="click" src="imgs/butterfly3.png.png" alt=""></button></a>
+    <main>
+<section class="gallery-section">
+
+   <div><H1>Fill Your Void</H1></div>
+
+   <div class="slider-container">
+    <button class="slider-button left" id="prevBtn">&#8592;</button>
+    <div class="slider-images" id="sliderTrack">
+      <!-- 🖼️ You can replace these with your own images -->
+      <img src="imgs/FYV.jpg" alt="Slide 1" loading="lazy">
+      <img src="imgs/FYV_bag.PNG" alt="Slide 2" loading="lazy">
+     
+    </div>
+    <button class="slider-button right" id="nextBtn">&#8594;</button>
+  </div>
+   
+
+
+    <p>This logo features the acronym"FYV"in bold, varsity-style block letters, 
+      filled with a gradient that transitions from pink to purple to blue,
+       giving it a vibrant and modern look. The phrase "FILL YOUR VOID" appears 
+       below in a sleek, futuristic typeface, reinforcing the brand's empowering and motivational message. 
+       Two bold, black starbursts on either side of the main text 
+       add a cosmic and dynamic feel
+       ,enhancing the sense of expansion and self-discovery. 
+       The overall design conveys boldness, creativity, and a sense of personal fulfillment.</p>
+   </div>
+
+
+  
+    
+
+
+
+
+</section>
+
+
+
+
+    </main>
+
+    <script>
+        const slider = document.getElementById('sliderTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slides = slider.querySelectorAll('img');
+        let currentIndex = 0;
+      
+        function updateSlider() {
+          const slideWidth = slides[0].clientWidth;
+          slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+      
+        // 👉 Move to previous image
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateSlider();
+        });
+      
+        // 👉 Move to next image
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlider();
+        });
+      
+        // 🧠 Make sure it resizes correctly
+        window.addEventListener('resize', updateSlider);
+      </script>
+</body>
+</html>

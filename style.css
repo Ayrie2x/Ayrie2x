@@ -1,0 +1,595 @@
+/*{
+    outline: 1px solid;
+}*/
+body{
+    
+    background-image: linear-gradient(180deg,#FD4C9C -1%, white 12%);
+    margin: 0;
+    
+}
+
+.scl{
+    background-image: none;
+    background-color: #FDE7F1;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #FD4C9C;
+}
+
+
+
+
+
+.Logo{
+    background-color: #FDE7F1;
+    overflow: hidden;
+    font-size: 100px;
+    text-align: center;
+    font-family: serif;
+    border-bottom: 20px solid #FD4C9C;
+    margin-top: 40px;
+    line-height: 75px;
+    margin-left: 0px;
+}
+.menu{
+
+    font-family: 'Lily Script One';
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    line-height: 100px;
+}
+
+h1, h2, h3, h4 {
+
+    font-family: 'Lily Script One';
+    color: black; 
+    text-align: center;
+    font-weight: 200; 
+    word-wrap:break-word ;
+
+
+}
+
+h1{
+    font-size: 60px;
+    width: 100%; 
+    height: 100%;
+}
+h2{  
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+}
+
+h3{
+    font-size: 64px;
+
+}
+
+h4{
+    font-size: 40px;
+    border-bottom: 15px solid #FD4C9C;
+}
+
+.homebutterly{
+    transform: rotate(-12deg);
+    padding: 8px;
+    margin-top: -65px;
+    line-height: 6px;
+    width: 82px;
+    animation: flap 1.5s infinite ease-in-out;
+}
+
+.homebutterly2{
+  padding: 53px;
+  margin-top: -60px;
+  line-height: 0px;
+  width: 47px;
+  animation: flap 1.5s infinite ease-in-out;
+  margin-left: -51px;
+}
+
+
+@keyframes flap {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+}
+
+.profession{
+
+    font-family: 'Lily Script One';
+    font-size: 50px;
+    font-size: 34px;
+    color: black;
+    text-align: center;
+    margin-left: -20px;
+    line-height: 59px;
+}
+
+
+.button{
+    border: none;
+    color: #FD4C9C;
+}
+.backbutton{
+
+    padding: 10px;
+    width: 90px;
+}
+
+
+.about-content {text-align: center;}
+
+.about-content img {
+
+    width: 50vw;
+    max-width: 500px;
+
+}
+
+
+.top{
+    width: 15%;
+    height: 15%;
+    transform-origin: top left;
+    padding: 20px;
+
+}
+
+
+.Journey{
+    font-size: 20px;
+    margin-left: 10px;
+    padding-top: 34px;
+}
+
+
+.gallery-section h1 {
+    font-size: 50px;
+    color: #FD4C9C;
+}
+.gallery{
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+
+}
+
+
+.gallery-section {
+
+    padding: 30px;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+   
+  }
+
+  .slider-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  .slider-images img {
+    width: 100%;
+    flex-shrink: 0;
+    align-self: center;
+    display: block;
+  }
+
+  .homebutton{
+
+position: absolute;
+    background-color: #FDE7F1;
+    border: none;
+    width: 50px;
+    margin-left: -9px;
+    padding: 1px;
+  }
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-104%);
+    background-color: #FD4C9C;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 6px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 1px;
+  }
+
+  .slider-button.left {
+    left: 10px;
+  }
+
+  .slider-button.right {
+    right: 10px;
+  }
+
+.div-button{
+padding: 45px;
+}
+
+/* .artdisplay h4{
+
+    border-bottom: 15px solid #FD4C9C;
+} */
+
+.displaypage{
+
+    font-family: 'Lily Script One';
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    line-height: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FDE7F1;
+  }
+  
+  label {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .message{
+
+    width: 30px;
+  }
+
+  
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 25px;
+  }
+  
+  textarea {
+    width: 280px;
+    margin: 11px;
+    height: 146px;
+    padding: 25px; 
+  }
+  
+  button {
+    background-color: #FD4C9C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    /* background-color: #FDE7F1; */
+  }
+
+  p {
+    font-size: x-large;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.displaybutton{
+
+    width: 72px;
+    background-image: linear-gradient(180deg, #FD4C9C 0%, white 185%);
+    padding: 0px;
+    margin: -1px;
+    margin-top: 2px;
+}
+
+
+
+/* Floating image preview */
+
+  .hover-preview {
+    display: inline;
+    color: #0077cc;
+    position: relative;
+    cursor: none;
+    text-decoration: underline;
+  }
+
+  .preview-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease;
+    z-index: 999;
+  }
+
+  .preview-img.visible {
+    opacity: 1;
+  }
+
+  @media (hover: none) {
+    /* 📴 Hide floating preview on devices that don't support hover */
+    .preview-img {
+      display: none !important;
+    }
+  }
+/* end of floating image preview */
+
+
+/* Overlay Menu Styles */
+
+
+
+/* 🍔 Hamburger button */
+.menu-button {
+position: fixed;
+top: 10px;
+left: 10px;
+z-index: 2;
+font-size: 5rem;
+background: none;
+border: none;
+cursor: pointer;
+color: #FD4C9C;
+transition: 1s;
+}
+
+.menu-button:hover::after {
+  content: "Click Me";
+  position: absolute;
+    top: 35px;
+    width: max-content;
+
+  font-size: medium;
+  opacity: 1;
+  
+
+}
+
+.aboutP{
+
+  font-size: large;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+/* 🧊 Fullscreen overlay */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FD4C9C;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 1000;
+
+}
+
+.overlay-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-menu nav a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.overlay-menu nav a:hover {
+  color:white;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-button img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+
+/* Overlay Menu Styles End */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 909px) {
+
+.displaybutton{
+    width: 100px;
+    background-image: linear-gradient(180deg, #FD4C9C 0%, white 135%);
+}
+
+h4{
+    font-size: 90px;
+    border-bottom: 15px solid #FD4C9C;
+}
+
+.Journey{
+    font-size: 38px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.displaypage{
+
+    font-size: 90px;
+    line-height: 180px;
+}
+
+.aboutP{
+
+  font-size: x-large;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;}
+
+    .slider-button {
+        color: rgb(0, 0, 0);
+
+      }
+    
+.homebutterly{
+    padding: 25px;
+    margin-top: -147px;
+    width: 240px;
+}
+.homebutterly2{
+
+  padding: 32px;
+    margin-top: -56px;
+    line-height: 3px;
+    width: 76px;
+}
+.homebutton{
+
+    width: 125px;
+}
+      .form {
+        display: table-caption;
+        max-width: 700px;
+        font-size: 40px;
+      }
+
+.name, .email, .message{
+    font-size: 40px
+}
+      .submit{
+
+        font-size: 25px;
+
+      }
+    
+
+      .Logo{
+        
+        font-size: 100px;
+        border-bottom: 20px solid #FD4C9C;
+        margin-top: 30px;
+        line-height: 65px;
+        margin-left: -50px;}
+    
+
+        h1{
+           
+            font-size: 80px;
+            width: 100%; 
+            height: 100%;
+            
+        }
+        h2{
+
+           
+            width: 100%;
+            height: 100%;
+            font-size: 80px;
+           
+        }
+        
+
+        .gallery-section h1 {
+
+            font-size: 70px;
+        }
+
+
+        .profession{
+
+            font-size: 80px;
+            margin: auto;
+        }
+
+.form{
+    display: table-caption;
+}
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    p {color: rgb(0, 0, 0);}
+
+
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+
+}
+
